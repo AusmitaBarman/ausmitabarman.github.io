@@ -297,6 +297,7 @@ body {
 	}
 	.intro-content .intro-position {
 		font-size: 1.5rem;
+		color: var(--primary-color);
 	}
 	.intro-social {
 		font-size: 2.5rem;
@@ -307,6 +308,7 @@ body {
 	.intro-content .button {
 		font-size: 1.2rem;
 		padding: 10px 15px;
+		color: var(--primary-color);
 	}
 }
 @media only screen and (max-width:600px) {
