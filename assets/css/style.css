@@ -712,6 +712,39 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
+
+
+/**/
+.about-content .row .col {
+	margin-bottom: .6rem;
+  padding-right: 30px;
+}
+.about-content .row .col strong {
+  font-weight: 700;
+	color: #313131;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	font-size: 1.5rem;
+	line-height: 3rem;
+}
+
+.about-content .row .skills strong {
+  display: block;
+}
+
+.about-content .row .col span {
+	display: block;
+  font-weight: 400;
+	color: #888888;
+	font-size: 1.5rem;
+	line-height: 1;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+/**/
+
+
 .about-content .skill-bars {
 	margin-top: 6rem;
 }
