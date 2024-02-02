@@ -24,6 +24,7 @@
     --distance: 60%;
     --plant-pro-main: rgba(154,184,136,1);
     --white-text: rgb(232, 232, 232);
+    --bake-main: #939d86;
 }
 
 /* <---------------> */
@@ -346,7 +347,7 @@ main,footer {
 
 .header-img {
     width: 100vw;
-    background-color: var(--plant-pro-main);
+    /* background-color: var(--plant-pro-main); */
     height: auto;
     display: flex;
     flex-direction: row;
@@ -360,12 +361,25 @@ main,footer {
     height: 65vh;
 }
 
+.bg-color-bake {
+    background-color: var(--bake-main);
+    height: 65vh;
+    overflow: hidden;
+    position: relative;
+}
+
 .header-img img {
     max-width: 35vw;
     max-height: 85%;
     width: auto;
     height:auto;
     padding: 10px 20px;
+}
+
+.bg-color-bake img {
+    top:200px;
+    position: absolute;
+    transform: scale(2.6) rotate(30deg);
 }
 
 .img-rotation1 {
@@ -388,6 +402,12 @@ main,footer {
         max-height: 65%;
     }
 
+    .bg-color-bake img {
+        top:300px;
+        left: 250px;
+        transform: scale(3.0) rotate(30deg);
+    }
+
 }
 @media only screen and (max-width:768px) {
     #container h1 {
@@ -400,7 +420,27 @@ main,footer {
         max-height: 65%;
         padding: 10px;
     }
+
+    .bg-color-bake img {
+        max-width: 55vw;
+        max-height: 90%;
+        top:20vw;
+        left: 130px;
+        transform: scale(2.0) rotate(30deg);
+    }
 }
+
+@media only screen and (max-width:650px) {
+    .bg-color-bake img {
+        max-width: 45vw;
+        max-height: 90%;
+        top:40vw;
+        left: 1vw;
+        transform: scale(2.5) rotate(30deg);
+    }
+
+}
+
 @media only screen and (max-width:400px) {
     #container h1 {
         font-size: 50px;
@@ -620,6 +660,7 @@ main,footer {
     position: absolute;
     left: -80px;
     top: -40px;
+    outline: 5px solid var(--section-secondary);
 }
 
 .empathy-section span {
@@ -812,6 +853,7 @@ main,footer {
     width: 100%;
 }
 
+
 #digital_wireframe .context {
     background-color: #c5c7c4;
 }
@@ -912,9 +954,8 @@ main,footer {
         padding-bottom: 40px;
     }
 
-
-
 }
+
 @media only screen and (max-width:400px) {
 
 
@@ -944,7 +985,57 @@ Final Design section
 }
 
 
+/* --------------
+Reflection section
+-------------- */
+
+#reflection ul {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+#reflection ul li{
+    background-color: rgba(0,0,0,0.08);
+    border-radius: 30px;
+    padding: 40px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: left;
+
+}
+
+#reflection p span {
+    display: block;
+    padding-top: 20px;
+    font-style: italic;
+    color: var(--plant-pro-main);
+}
+
+
+@media only screen and (max-width:1024px) {
+    #reflection ul {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #reflection ul li{
+        border-radius: 15px;
+        padding: 40px;
+        width: 90vw;
+    }
+}
+
+/* ------------ */
 /* button */
+/* ------------ */
+
+
 .button {
     color: var(--secondary-color);
     border:3px solid rgba(78, 78, 78, 0.3);
@@ -1213,8 +1304,3 @@ footer ul {
     max-width: 50px;
     height: 50px;
   }
-
-
-/*--------------------------------------------------------------
-# From Figma
---------------------------------------------------------------*/
