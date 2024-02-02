@@ -4,75 +4,448 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bake & Brew</title>
     <!-- Favicons -->
-    <link href="assets/img/favicon.ico" rel="icon">
+    <link rel="icon" type="image/x-icon" href="assets/img/fav.png">
 
-    <!-- Vendor CSS Files -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
-    <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <title>Bake & Brew</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/portfolio-styles.css">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/bake-color.css">
 
-    <!-- Template Main CSS File -->
-    <link href="assets/css/project-styles.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
-      <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-        <nav class="navbar navbar-expand-xl">
-            <div class="container">
-                <a href="index.html#intro" class="navbar-brand d-flex me-auto">
-                    <img class="logo-img d-inline-block" src="assets/img/ausmita_logo.png" alt="logo">
-                    <h1 class="d-inline-block logo-h1">AUSMITA BARMAN</h1>
+        <div class="navbar">
+            <div class="logo">
+                <a href="/">
+                    <img src="assets/img/ausmita_logo.png" alt="logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse" id="collapsingNavbar3">
+            </div>
+            <ul class="links">
+                <li><a href="/">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropdown-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </div>
+        </div>
 
-                    <ul class="nav navbar-nav ms-auto justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#intro">Home</a>
+        <div class="sidebar">
+            <ul>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#empathy">Building Empathy</a></li>
+                <li><a href="#final_design">Final Design</a></li>
+                <li><a href="#reflection">Reflection</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="container">
+            <div class="header">
+                <div class="header-text">
+                    <h1>Bake & Brew</h1>
+                </div>
+                <div class="header-img bg-color-bake">
+                    <!-- <img src="./assets/img/portfolio/plant1.png" alt="" class="img-rotation1"> -->
+                    <img src="./assets/img/portfolio/bake_header.png" alt="">
+                    <!-- <img src="./assets/img/portfolio/plant2.png" alt="" class="img-rotation2"> -->
+                </div>
+            </div>
+
+            <!-- project context section -->
+            <div id="project_context">
+                <div class="context">
+                    <h2 class="plant-pro-h2">Project Context</h2>
+                    <ul>
+                        <li class="justify">
+                            <h3>Background</h3>
+                            <p>Bake & Brew is a shopping app for Bakery which located in the suburbs of a metropolitan
+                                area. This bakery focus to attract and retain customers to order online. It is very
+                                noticeable that they introduce a dedicated mobile apps which offers multiple deals and
+                                daily rewards including broad spectrum of healthy and delicious bakery menu. The target
+                                customers for this bakery like who are really looking for healthy bakery food with good
+                                price. </p>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#about">About</a>
+                        <li class="problem-statement">
+                            <p>Healthy diet followers who have lack of the time to prepare or find a healthy meal or
+                                bakery food.</p>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+                        <li class="justify">
+                            <h3>Goal</h3>
+                            <p>Design an app for Bake & Brew bakery that allows users to easily order and pick up fresh,
+                                healthy bakery food.
+                            </p>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        <li>
+                            <a href="https://www.figma.com/proto/bAqsJIfBrDy6Z5AlSxELUJ/Bakery-google?page-id=319%3A587&node-id=305-3507&viewport=128%2C202%2C0.12&scaling=scale-down&starting-point-node-id=305%3A3507"
+                                target="_blank" class="button button-resume button-prototype">See Prototype</a>
+                        </li>
+                    </ul>
+                    <div class="role-time-tool row">
+                        <div class="col-sm-12 col-md-12 col-lg-44 col-xl-4">
+                            <div class="role-icon">
+                                <i class="bi bi-person"></i>
+                            </div>
+                            <h3>Role</h3>
+                            <p class="justify">Conducting interviews, paper and digital wireframing, low and
+                                high-fidelity prototyping, conducting usability studies, accounting for accessibility,
+                                and iterating on designs.</p>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-44 col-xl-4">
+                            <div class="role-icon">
+                                <i class="bi bi-clock"></i>
+                            </div>
+                            <h3>Time</h3>
+                            <p>5 weeks</p>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-44 col-xl-4">
+                            <div class="role-icon">
+                                <i class="bi bi-gear"></i>
+                            </div>
+                            <h3>Tool</h3>
+                            <ul>
+                                <li>Figma</li>
+                                <li>Adobe Photoshop</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- research section -->
+            <div id="research">
+                <div class="context">
+                    <h2 class="plant-pro-h2">User Research</h2>
+                    <ul>
+                        <li class="justify">
+                            <p>I conducted interviews and created empathy maps to understand the users I’m designing for
+                                and their needs. A primary user group identified through research was working adults who
+                                don’t have time to prepare or find healthy meals and bakery food. This user group
+                                confirmed initial assumptions about Bake & Brew customers, but research also revealed
+                                that time was not the only factor limiting users from cooking at home. Other user
+                                problems included obligations, interests, or challenges that make it difficult to find a
+                                healthy bakery in-person.
+                            </p>
+                        </li>
+
+                        <li class="problem-statement research-questions">
+                            <h3 class="context-h3">Problem Statement</h3>
+                            <ul>
+                                <li style="list-style: none;">Luna is a busy workingadult who needs an online bakery app
+                                    which has the healthy
+                                    option with quick ordering process because it is always her priority to eat
+                                    healthily, but at the same time, she doesn’t want to miss out anything like good
+                                    desserts and bakery food. </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="role-time-tool user-voices row">
+                    <div class="col-6">
+                        <p><span><i class="bi bi-quote"></i></span>Most of the bakery doesn’t offer healthy option like
+                            sugar-free or low-calories food.
+                        </p>
+                    </div>
+                    <div class="col-6"></div>
+                    <div class="col-6"></div>
+                    <div class="col-6">
+                        <p><span><i class="bi bi-quote"></i></span>It’s always difficult to find a dog friendly place.
+                        </p>
+                    </div>
+
+                    <div class="col-6">
+                        <p><span><i class="bi bi-quote"></i></span>Sometimes it annoys me to explain the customize
+                            order. It would be way easier if the place has the kiosk tab for a quick order.</p>
+                    </div>
+                    <div class="col-6"></div>
+                    <h4>Voices from User Interviews</h4>
+                </div>
+            </div>
+
+            <!-- empathy section-->
+            <div id="empathy">
+                <div class="context">
+                    <h2 class="plant-pro-h2">Building Empathy</h2>
+
+                    <ul>
+                        <li>
+                            <div class="empathy-section">
+                                <img src="assets/img/portfolio/luna.png" alt="">
+                                <span>Luna is very passionate about a healthy and structured lifestyle. She really loves
+                                    to explore and do new things which can make a big positive change in our society. As
+                                    a yoga instructor, it is always her priority to eat healthily, but at the same time,
+                                    she doesn’t want to miss out anything like good desserts and bakery food. But mostly
+                                    she gets frustrated when the place has zero healthy option, a non instagrammable and
+                                    dog-unfriendly environment.
+                                </span>
+                                <div class="empathy-goals">
+                                    Goals:
+                                    <ul>
+                                        <li>To do something great that makes our society a better place to live</li>
+                                        <li>To follow a healthy lifestyle</li>
+                                        <li>To find an instagrammable place with the access of good healthy food
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="role-time-tool row empathy-row">
+                    <div class="col-12">
+                        <p>Mapping Luna’s user journey revealed how helpful it would be for users to have access to a
+                            dedicated Bake & Brew app.
+                        </p>
+                    </div>
+                    <div class="col-12">
+                        <img src="assets/img/portfolio/luna-j-map.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Digital Wireframe Section -->
+            <div id="digital_wireframe">
+                <div class="context">
+                    <h2>Starting the Design</h2>
+                    <ul>
+                        <li class="justify">
+                            <h3>Paper Wireframes</h3>
+                            <p>Taking the time to draft iterations of each screen of the app on paper ensured that the
+                                elements that made it to digital wireframes would be well-suited to address user pain
+                                points. For the home screen, I prioritized a quick and easy ordering process to help
+                                users save time.
+                            </p>
+                        </li>
+                        <li class="wirewrame-image">
+                            <img src="assets/img/portfolio/bake-paper-wireframe.png" alt="Lo Fi">
+                        </li>
+
+                        <li class="justify">
+                            <h3>Digital Wireframes</h3>
+                            <p>As the initial design phase continued, I made sure to base screen designs on feedback and
+                                findings from the user research. Using the completed set of digital wireframes, I
+                                created a low-fidelity prototype. The primary user flow I connected was building and
+                                ordering food quickly, so the prototype could be used in a usability study.
+                            </p>
+                        </li>
+                        <li class="wirewrame-image">
+                            <img src="assets/img/portfolio/bake-digital-wireframe.png" alt="Lo Fi">
+                        </li>
+
+                        <li class="justify">
+                            <h3>Affinity Diagram</h3>
+                            <p>At this point, I have a thorough and organized spreadsheet full of notes and observations
+                                from the testing I did on Bake & Brew Lo-fi prototype. Then I started adding those
+                                observations to digital sticky notes to make an affinity diagram.
+                            </p>
+                        </li>
+                        <li class="wirewrame-image">
+                            <img src="assets/img/portfolio/bake-affinity-diagram.png" alt="Lo Fi">
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="context digital-wireframe-context">
+                    <p>
+                        I conducted two rounds of usability studies. Findings from the first study helped guide the
+                        designs from wireframes to mockups. The second study used a high-fidelity prototype and revealed
+                        what aspects of the mockups needed refining. Here are all the findings I got from usability
+                        studies:
+                    </p>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 wireframe-col">
+                            <h2>1</h2>
+                            <span>Users want an easy food ordering process.</span>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 wireframe-col mid-col">
+                            <h2>2</h2>
+                            <span>Users want a delivery option before start the order.</span>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 wireframe-col">
+                            <h2>3</h2>
+                            <span>Users want quick customization options.</span>
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 wireframe-col">
+                            <h2>4</h2>
+                            <span>Add a “order as a guest” option help users to order quickly without creating a profile.</span>
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 wireframe-col mid-col">
+                            <h2>5</h2>
+                            <span>The checkout process doesn't have add items option.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Design Section -->
+            <div id="final_design">
+                <div class="context">
+                    <h2 class="plant-pro-h2">Final Design</h2>
+                    <ul>
+                        <li class="justify">
+                            <h3>Key Mockups</h3>
+                            <p>The usability studies revealed that the users expressed a desire to easy signup option or
+                                ordering as a guest, also added customize it with more customize option and lastly
+                                during checkout put a button for add more items. So these are 3 key mockups:
+                            </p>
+                        </li>
+                        <li class="problem-statement">
+                            <ul>
+                                <li>Order as a guest</li>
+                                <li>Add more items</li>
+                                <li>Customize it</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="container-fluid">
+                    <ul class="bake-final-mockups">
+                        <li class="bake-final-mockups-li">
+                            <img src="assets/img/portfolio/bake-final-1.png" alt="">
+                            <img src="assets/img/portfolio/bake-final-2.png" alt="">
+                        </li>
+                        <li class="bake-final-mockups-li">
+                            <img src="assets/img/portfolio/bake-final-3.png" alt="">
+                            <img src="assets/img/portfolio/bake-final-4.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="context">
+                    <ul>
+                        <li class="justify">
+                            <h3>High-fidelity Prototype</h3>
+                            <p>The final high-fidelity prototype presented cleaner user flows for ordering food and
+                                checkout. It also met user needs for a pickup or delivery option as well as more
+                                customization.
+                            </p>
+                        </li>
+                        <li class="wirewrame-image">
+                            <img src="assets/img/portfolio/bake-hi-fi-1.png" alt="hi fi 1">
+                        </li>
+                        <li class="wirewrame-image">
+                            <img src="assets/img/portfolio/bake-hi-fi-2.png" alt="Lo Fi">
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
-    </header>
 
-    <main>
+            <!-- Reflection Section -->
+            <div id="reflection">
+                <div class="context">
+                    <h2 class="plant-pro-h2">Reflection</h2>
+                    <ul>
+                        <li class="justify">
+                            <h3>Impact</h3>
+                            <p>The app makes users feel like Bake & Brew really thinks about how to meet their needs.
+                                One quote from peer feedback:
+                                <span>
+                                    “The app made it so easy to order bakery food ! I would definitely use this app as a
+                                go-to for a delicious, fast, and even healthy food.”
+                                </span>
 
+                            </p>
+                        </li>
 
+                        <li class="justify">
+                            <h3>What I learned</h3>
+                            <p>While designing the Bake & Brew app, I learned that the first ideas for the app are only
+                                the beginning of the process. Usability studies and peer feedback influenced each
+                                iteration of the app’s designs.
+                            </p>
+                        </li>
 
+                    </ul>
+                </div>
+            </div>
+
+        </div>
     </main>
-    <!-- ======= Footer ======= -->
 
-    <!-- End Footer -->
+    <footer>
+        <ul>
+            <li><a href="plantpro.html" class="button-project"><i class="bi bi-chevron-left"></i></a></li>
+            <li>
+                <a href="https://www.figma.com/proto/bAqsJIfBrDy6Z5AlSxELUJ/Bakery-google?page-id=319%3A587&node-id=305-3507&viewport=128%2C202%2C0.12&scaling=scale-down&starting-point-node-id=305%3A3507"
+                    target="_blank" class="button button-resume button-prototype">See Prototype</a>
+            </li>
 
-    <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
-    <!-- <button id="backToTop" class="back-to-top d-flex align-items-center justify-content-center">
-        <i class="bi bi-arrow-up-short"></i>
-    </button> -->
+            <li><a href="flowerit.html" class="button-project"><i class="bi bi-chevron-right"></i></a></li>
+        </ul>
 
-    <!-- Vendor JS Files -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-col col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <div class="address">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <h4>Location</h4>
+                        <p>Miami, FL</p>
+                    </div>
+                    <div class="contact-col col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <div class="email">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <h4>Email</h4>
+                        <p>ausmita.barman@gmail.com</p>
+                    </div>
+                    <div class="contact-col col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <div class="phone">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h4>Social</h4>
+                        <div class="social-links">
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="instagram"><i class='bx bxs-envelope'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Contact Section -->
+        <div class="copyright">
+            <p>&copy Ausmita Barman</p>
+        </div>
 
-    <!-- Template Main JS File -->
-    <!-- <script src="assets/js/main.js"></script> -->
-    <!-- <script src="assets/js/backToTop.js"></script> -->
+    </footer>
+
+    <button id="backToTop" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <script src="assets/js/topMenu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/backToTop.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
 
 </body>
 
