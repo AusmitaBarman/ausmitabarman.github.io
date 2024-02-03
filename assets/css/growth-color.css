@@ -4,31 +4,17 @@
 :root {
     --primary-color: #f55c7a;
     --secondary-color: #3e3e3e;
-    --border: 3px;
-    --color1: #faa6cd;
-    --color2: #fce7a6;
-    --intro-overlay: rgba(255, 249, 237, 0.85);
     --section-primary:rgb(255, 249, 237);
     --section-secondary:rgb(250, 245, 238);
-    --from: 30deg;
-    --distance: 60%;
-    --plant-pro-main: #98a388;
+    --plant-pro-main: #b3938c;
     --white-text: rgb(232, 232, 232);
-    --bake-main: #939d86;
 }
 
-.bg-color-bake {
-    background-color: var(--bake-main);
+.bg-color-flower {
+    background-color: var(--plant-pro-main);
     height: 65vh;
-    overflow: hidden;
-    position: relative;
 }
 
-.bg-color-bake img {
-    top:200px;
-    position: absolute;
-    transform: scale(2.6) rotate(30deg);
-}
 
 #empathy .col-12 img {
     width: 80%;
@@ -36,6 +22,10 @@
 }
 
 @media only screen and (max-width:768px) {
+    .header-img img {
+        width: 80vw;
+    }
+
     #empathy .col-12 img {
         width: 90%;
     }

@@ -361,12 +361,12 @@ main,footer {
     height: 65vh;
 }
 
-.bg-color-bake {
+/* .bg-color-bake {
     background-color: var(--bake-main);
     height: 65vh;
     overflow: hidden;
     position: relative;
-}
+} */
 
 .header-img img {
     max-width: 35vw;
@@ -376,11 +376,11 @@ main,footer {
     padding: 10px 20px;
 }
 
-.bg-color-bake img {
+/* .bg-color-bake img {
     top:200px;
     position: absolute;
     transform: scale(2.6) rotate(30deg);
-}
+} */
 
 .img-rotation1 {
     transform: rotateY(40deg);
