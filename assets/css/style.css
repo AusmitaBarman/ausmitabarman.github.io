@@ -1075,7 +1075,8 @@ body {
 #portfolio {
   background-color: var(--section-primary);
   padding-top: 12rem;
-	padding-bottom: 15rem;
+  padding-bottom: 15rem;
+  overlow: hidden;
 }
 
 
