@@ -12,13 +12,13 @@ My journey involves crafting delightful interfaces and solving design challenges
 
 ### Projects
 
-#### Project 1: [PLant Pro](https://ausmitabarman.github.io/plantpro.html)
+#### Project 1: [Plant Pro](https://ausmitabarman.github.io/plantpro.html)
 
 #### Project 2: [Bake & Brew](https://ausmitabarman.github.io/bake_n_brew.html)
 
 #### Project 3: [Flower it](https://ausmitabarman.github.io/flowerit.html)
 
-#### Project 4: [Growth] (https://ausmitabarman.github.io/growth.html)
+#### Project 4: [Growth](https://ausmitabarman.github.io/growth.html)
 
 #### Project 5: [World Happiness Report Analysis](https://ausmitabarman.github.io/happiness.html)
 
@@ -44,7 +44,7 @@ You can view my portfolio live at [ausmitabarman.github.io](https://ausmitabarma
 ## Contact
 
 Feel free to reach out to me through:
-- Email: ausmita.barman@gmail.com
+- Email: [ausmita.barman@gmail.com]
 - LinkedIn: [Your LinkedIn Profile]
 - Twitter: [Your Twitter Profile]
 
