@@ -1,11 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="assets/img/fav.png">
     <title>World Happiness Report Analysis</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/portfolio-styles.css">
+    <link rel="stylesheet" href="./assets/css/happiness-color.css">
+
 </head>
+
 <body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="/">
+                    <img src="assets/img/ausmita_logo.png" alt="logo">
+                </a>
+            </div>
+            <ul class="links">
+                <li><a href="/">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropdown-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li><a href="#project_context">Context</a></li>
+                <li><a href="#data">Data</a></li>
+                <li><a href="#eda">EDA</a></li>
+                <li><a href="#final">Final</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="container">
+            <div class="header">
+                <div class="header-text">
+                    <h1>World Happiness Report Analysis</h1>
+                </div>
+                <div class="header-img bg-color-flower">
+                    <img src="./assets/img/portfolio/happiness-header.png" alt="">
+                </div>
+            </div>
+
+            <!-- project context section -->
+            <div id="project_context">
+                <div class="context">
+                    <h2 class="plant-pro-h2">Project Context</h2>
+                    <ul>
+                        <li class="justify">
+                            <h3>Goal</h3>
+                            <p>The World Happiness Report is a yearly publication that provides an overview of global
+                                happiness levels and the factors that contribute to happiness. In this report, my goal
+                                is to conduct a visual analysis of the World Happiness Report from 2018 to 2022. My aim
+                                is to identify any trends or changes in the happiness levels across countries and
+                                explore the factors that contribute to happiness.
+                            </p>
+                        </li>
+                        <li class="justify">
+                            <h3>Result</h3>
+                            <p>I used data from the World Happiness Report for the years 2018 to 2022. I analyzed the
+                                data using various visual tools, including line charts, scatter plots, bar charts, and
+                                maps. I also examined the correlations between happiness score and other 7 key factors
+                                such as GDP, social support, and freedom for life choices.
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="role-time-tool row">
+                        <div class="col-sm-12 col-md-12 col-lg-44 col-xl-4">
+                            <div class="role-icon">
+                                <i class="bi bi-person"></i>
+                            </div>
+                            <h3>Role</h3>
+                            <p class="justify eda-role">Data Analyst</p>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-44 col-xl-4">
+                            <div class="role-icon">
+                                <i class="bi bi-clock"></i>
+                            </div>
+                            <h3>Time</h3>
+                            <p>3 weeks</p>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-44 col-xl-4">
+                            <div class="role-icon">
+                                <i class="bi bi-gear"></i>
+                            </div>
+                            <h3>Tool</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>Jupyter Notebook</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Data Section -->
+            <section id="data">
+                <div id="final_design">
+                    <div class="context">
+                        <h2 class="plant-pro-h2">Data</h2>
+                        <ul>
+                            <li>
+                                <h3>Key Mockups</h3>
+                                <p>After collecting, processing, wrangling, cleaning, and combing data from year 2018 to
+                                    2022 into one data frame 12 columns and 760 data entires. Here is the final look of
+                                    the
+                                    data frame.
+                                </p>
+                            </li>
+                            <li class="wirewrame-image">
+                                <img src="assets/img/portfolio/happiness-df.png" alt="Dataframe">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- EDA Section -->
+            <section id="eda">
+                <div id="final_design">
+                    <div class="context">
+                        <h2 class="plant-pro-h2">EDA</h2>
+                        <ul>
+                            <li class="justify">
+                                <h3>Top 30 Happy Countries</h3>
+                            </li>
+                            <li class="wirewrame-image">
+                                <img src="assets/img/portfolio/happiness-top-30.png" alt="Dataframe">
+                            </li>
+                            <li>
+                                <p>
+                                    Plot above showing top 30 happy countries around the world based on seven key
+                                    factors. From the plot we see GDP per capita, social support, and Dystopia +
+                                    Residual has more impact on happiness score compare to other factors.
+                                </p>
+                            </li>
+
+                            <li class="justify">
+                                <h3>Happiness Score vs 7 key Factors</h3>
+                            </li>
+                            <li class="wirewrame-image">
+                                <img src="assets/img/portfolio/happiness-relationship.png" alt="Dataframe">
+                            </li>
+                            <li>
+                                <p>
+                                    From above I found that there is a strong positive correlation between GDP and
+                                    happiness levels, indicating that wealthier countries tend to be happier.
+                                </p>
+                                <p>
+                                    Another factor that strongly influences happiness levels is social support.
+                                    Countries with stronger social support systems tend to have higher happiness levels.
+                                    We also found that freedom and generosity are significant contributors to happiness
+                                    levels, with countries that score high in these areas ranking higher in happiness
+                                    levels.
+                                </p>
+                                <p>
+                                    On the other hand, Generosity, Perceptions of Corruption does not have strong
+                                    correlations with Happiness Score.
+                                </p>
+                            </li>
+
+                            <li class="justify">
+                                <h3>Year by Year Comparison</h3>
+                            </li>
+                            <li class="wirewrame-image">
+                                <img src="assets/img/portfolio/happiness-comparioson-1.png" alt="Dataframe">
+                            </li>
+                            <li>
+                                <p>
+                                    It is clear from the above plots, Nordic countries are clearly happier than the rest
+                                    of the world where Finland is the happiest country of the World, Denmark holds the
+                                    second place for the last four years, and Iceland, Switzerland are closely competing
+                                    for the third place
+                                </p>
+                            </li>
+
+                            <li class="wirewrame-image">
+                                <img src="assets/img/portfolio/happiness-comparison-2.png" alt="Dataframe">
+                            </li>
+                            <li>
+                                <p>
+                                    From the above plots we see, Afghanistan is the most unhappy country in the last
+                                    three years(2022,2021,2020), Followed by Lebanon, Zimbabwe, Rwanda in 2022, South
+                                    Sudan was in top three until 2020 then not in top for 2021 and 2022.
+
+                                </p>
+                                <p>
+                                    India(2020), Lebanon(2022), and Zambia(2022) appeared only once in the bottom list.
+                                </p>
+                                <p>
+                                    Now I will investigate further to see how the happiness score have changed over the
+                                    years for few selected countries to find any pattern.
+                                </p>
+                            </li>
+
+                            <li class="wirewrame-image">
+                                <img src="assets/img/portfolio/happiness-comparison-3.webp" alt="Dataframe">
+                            </li>
+                            <li>
+                                <p>
+                                    From the above plot, It is evident that there has been a sudden decline in Lebanon's
+                                    happiness score in 2022. India and Zambia, on the other hand, seem to be following a
+                                    usual trend with no major fluctuations in their rankings. It is not unexpected for
+                                    Afghanistan to be positioned at the bottom of the list given the prevailing
+                                    political and economic situation in the country. Notably, South Sudan did not
+                                    feature in the bottom ten rankings for both 2021 and 2022, likely because there was
+                                    no available data for the country.
+                                </p>
+                            </li>
+
+                            <li class="justify">
+                                <h3>Comparison by Regions</h3>
+                            </li>
+                            <li class="wirewrame-image">
+                                <img src="assets/img/portfolio/happiness-region-1.webp" alt="Dataframe">
+                            </li>
+                            <li class="wirewrame-image">
+                                <img src="assets/img/portfolio/happiness-region-2.webp" alt="Dataframe">
+                            </li>
+                            <li>
+                                <p>
+                                    Based on the above plots, it is clear that North America, Australia, and New Zealand
+                                    have consistently been the happiest regions of the world for the past four years,
+                                    from 2019 to 2022. These regions have shown a higher level of well-being, social
+                                    support, and economic stability. In contrast, South Asia and Sub-Saharan Africa have
+                                    been in a close contest for the lowest position in the rankings, indicating
+                                    challenges related to poverty, political instability, and inadequate access to basic
+                                    resources. These findings highlight the need for continued efforts to improve the
+                                    quality of life for people living in these regions, and to address the underlying
+                                    factors that contribute to happiness and well-being.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Final Section -->
+            <section id="final">
+                <div id="final_design">
+                    <div class="context">
+                        <ul>
+                            <li class="justify">
+                                <h3>Happiness Score Around the World</h3>
+                                <p>After collecting, processing, wrangling, cleaning, and combing data from year 2018 to
+                                    2022 into one data frame 12 columns and 760 data entires. Here is the final look of
+                                    the
+                                    data frame
+                                </p>
+                            </li>
+                            <li class="wirewrame-image">
+                                <img src="assets/img/portfolio/happiness-final.webp" alt="Dataframe">
+                            </li>
+
+                            <li>
+                                <h3>Conclusion</h3>
+                                <p>In conclusion, the world happiness report from 2018 to 2022 indicates a slight
+                                    decline in overall happiness levels, with the impact of COVID-19 being a significant
+                                    contributing factor. Regional trends have remained relatively stable, with the
+                                    Nordic countries continuing to top the list for the happiest countries in the world.
+                                    GDP, social support, freedom, and healthy life expectancy are the main contributors
+                                    to happiness levels, and countries that score high in these areas tend to rank
+                                    higher in happiness levels.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="growth.html" class="button-project"><i class="bi bi-chevron-left"></i></a></li>
+            <li>
+                <a href="https://xd.adobe.com/view/4e26f5c4-1205-4833-95a8-899802fb5608-1b75/" target="_blank"
+                    class="button button-resume button-prototype">See Prototype</a>
+            </li>
+
+            <li><a href="covid.html" class="button-project"><i class="bi bi-chevron-right"></i></a></li>
+        </ul>
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-col col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <div class="address">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <h4>Location</h4>
+                        <p>Miami, FL</p>
+                    </div>
+                    <div class="contact-col col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <div class="email">
+                            <i class="bi bi-envelope"></i>
+                        </div>
+                        <h4>Email</h4>
+                        <p>ausmita.barman@gmail.com</p>
+                    </div>
+                    <div class="contact-col col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                        <div class="phone">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h4>Social</h4>
+                        <div class="social-links">
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="mailto:ausmita.barman@gmail.com" class="instagram"><i
+                                    class='bx bxs-envelope'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Contact Section -->
+        <div class="copyright">
+            <p>&copy Ausmita Barman</p>
+        </div>
+
+    </footer>
+
+    <button id="backToTop" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <script src="assets/js/topMenu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/backToTop.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
 
 </body>
+
 </html>
