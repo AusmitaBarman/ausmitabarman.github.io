@@ -491,6 +491,10 @@ main,footer {
     text-justify: inter-word;
 }
 
+.eda-role {
+    text-align: center;
+}
+
 .problem-statement {
     position: relative;
     font-size: 1.8rem;

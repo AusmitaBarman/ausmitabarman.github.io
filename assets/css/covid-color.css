@@ -1,0 +1,138 @@
+
+/* overwrite styling from portfolio-styles.css */
+
+:root {
+    --primary-color: #f55c7a;
+    --secondary-color: #3e3e3e;
+    --section-primary:rgb(255, 249, 237);
+    --section-secondary:rgb(250, 245, 238);
+    --plant-pro-main: #025772;
+    --white-text: rgb(232, 232, 232);
+}
+
+
+#container h1 {
+    padding-top: 40px;
+    transform: scale(0.8);
+}
+
+.header-text {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin-bottom: 5vh;
+}
+
+
+.header-img img {
+    max-width: 90vw;
+    max-height: 100%;
+    width: 60vw;
+    height: auto;
+}
+
+
+.bg-color-flower {
+    /* background-color: #ffffff; */
+    height: 60vh;
+}
+
+
+#empathy .col-12 img {
+    width: 80%;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width:768px) {
+    .header-img img {
+        width: 80vw;
+    }
+
+    #empathy .col-12 img {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #container h1 {
+        padding-top: 80px;
+        transform: scale(0.8);
+    }
+
+    .header-text {
+        margin-top: 2vh;
+        margin-bottom: 1vh;
+    }
+}
+
+.final-design-ul {
+    display: flex;
+    flex-direction: column;
+    list-style:disc !important;
+    gap: 10px !important;
+}
+
+
+
+#final_design {
+    background-color: #ffffff;
+}
+
+#final_design h3 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#final_design span {
+    display: block;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+#final_design .problem-statement {
+    padding: 0 100px;
+}
+
+#final_design .problem-statement ul {
+    padding: 0 !important;
+}
+
+
+.wireframe-col>span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-wrap: wrap;
+}
+
+footer {
+    background-color: #ffffff;
+}
+
+
+@media only screen and (max-width:1024px) {
+    .bake-final-mockups {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .wireframe-col {
+        height: 100px;
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    .bake-final-mockups img {
+        width: 40vw!important;
+        height: auto;
+    }
+
+    .wireframe-col>span {
+        font-size: 1.2rem;
+    }
+}
