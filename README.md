@@ -36,6 +36,7 @@ My journey involves crafting delightful interfaces and solving design challenges
 - Adobe XD, Sketch, Figma
 - HTML/CSS/JavaScript (Basic understanding for prototyping)
 - Version Control (Git)
+  [![My Skills](https://skillicons.dev/icons?i=figma,xd,html,css,js,ps,github&theme=light)](https://skillicons.dev)
 
 ## How to View My Portfolio
 
@@ -44,8 +45,8 @@ You can view my portfolio live at [ausmitabarman.github.io](https://ausmitabarma
 ## Contact
 
 Feel free to reach out to me through:
-- Email: [ausmita.barman@gmail.com]
-- LinkedIn: [Your LinkedIn Profile]
-- Twitter: [Your Twitter Profile]
+- Email: []
+- LinkedIn: []
+- Twitter: []
 
 Let's connect and collaborate on exciting projects! 🚀
