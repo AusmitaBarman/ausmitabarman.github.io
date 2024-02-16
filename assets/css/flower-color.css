@@ -89,6 +89,13 @@
     text-wrap: wrap;
 }
 
+.flowerit-final-design {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 
 @media only screen and (max-width:1024px) {
     .bake-final-mockups {
