@@ -44,8 +44,8 @@ You can view my portfolio live at [ausmitabarman.github.io](https://ausmitabarma
 ## Contact
 
 Feel free to reach out to me through:
-- Email: []
-- LinkedIn: []
-- Twitter: []
+- Email: 
+- LinkedIn: 
+- Twitter: 
 
-Let's connect and collaborate on exciting projects! 🚀
+Let's connect and collaborate on exciting projects! 🚀🚀🚀
