@@ -80,3 +80,7 @@ td {
 #style_sheet .context>h2 {
     color: var(--plant-pro-main);
 }
+
+.wireframe-col span{
+    text-wrap:wrap;
+}
