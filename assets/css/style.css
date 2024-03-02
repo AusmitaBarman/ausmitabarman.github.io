@@ -1103,6 +1103,11 @@ body {
   font-family: "lora";
 }
 
+
+.project-safe-capture {
+  background-color: #567483;
+}
+
 .project-plant-pro {
   background-color: #568366;
 }
