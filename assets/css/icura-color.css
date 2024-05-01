@@ -84,3 +84,25 @@ td {
 .wireframe-col span{
     text-wrap:wrap;
 }
+
+.safe-research-ul ol {
+    text-align: left;
+}
+
+.safe-research-ul ol>li{
+    color: var(--plant-pro-main);
+}
+
+.safe-research-ul ol>li p{
+    color: var(--secondary-color);
+}
+
+.icura-research-data-visuals {
+    list-style-type: disc !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.digital-wireframe-context>p {
+    text-align: justify;
+}
